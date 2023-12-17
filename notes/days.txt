@@ -1,3 +1,7 @@
 1.setup
 2.folders and file structure, apps, and simple html rendering
-template rendering
+3.template rendering
+4.static rendering
+5.templates inheritance and navigation
+
+7 dtl conditions,context processor & loop and model intro
