@@ -1,29 +1,34 @@
 {% extends 'myapp/base.html' %}
 
 {% block content %}
- <h1> Orders</h1>
-   Name: {{ name }} <br>
-   Age:  {{ age }} <br>
-   Address: {{ address }} <br>
+
+<h1> Our product features </h1>
+
+
+
+
+
 <br>
 <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
       <th scope="col">Name</th>
-      <th scope="col">Store Location</th>
-      <th scope="col">Price</th>
+      <th scope="col">Description</th>
+      
     </tr>
   </thead>
   <tbody>
   {% for item in items %}
     <tr>
-      <th scope="row">{{ forloop.counter}}</th>
+      <th scope="row">{{ loop.index }}</th>
       <td>{{ item.name }}</td>
-      <td>{{ item.store_location }}</td>
-      <td>{{ item.price }}</td>
+      <td>{{ item.description }}</td>
+      
     </tr>
   {% endfor %}
   </tbody>
 </table>
 {% endblock %}
+
+
