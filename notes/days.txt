@@ -3,7 +3,8 @@
 3.template rendering
 4.static rendering
 5.templates inheritance and navigation
-
+6.Content passing to template
 7 dtl conditions,context processor & loop and model intro
-
+8 Model and orm introduction
 9 CRUD ORMs and Models relations
+10.Model Relations
