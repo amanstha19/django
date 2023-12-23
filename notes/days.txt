@@ -5,3 +5,5 @@
 5.templates inheritance and navigation
 
 7 dtl conditions,context processor & loop and model intro
+
+9 CRUD ORMs and Models relations

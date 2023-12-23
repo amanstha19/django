@@ -1,6 +1,7 @@
 # myapp/views.py
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Student
 def hello_world(request):
     return HttpResponse('''
     
@@ -64,5 +65,6 @@ def temp_inherit_features(request):
                                                                 "address": "Bhaktapur", "items": items})
 
 def temp_inherit_pricing(request):
-    return render(request, template_name='myapp/temp_inherit_pricing.html')
-
+    students = Student.objects.all()
+    return render(request, template_name='myapp/temp_inherit_pricing.html',
+                  context={"students": students})

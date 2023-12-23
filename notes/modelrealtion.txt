@@ -1,0 +1,37 @@
+1-There are 3 type of model realtion
+one to one relation
+one to many  relation
+many to many relation
+
+1.  ONE to many
+==> if you have to group a group of item under a same roof you can
+   use one-many relation
+    for example Student on the same class room
+
+
+
+class Category
+    title
+
+
+class food:
+price:
+dateofexp:
+category = models.foreignkey(category)
+
+
+
+
+ 2. One-One-relation
+ if you have to maintain a unique relationship between tho tables then you can use one-one relationhip
+ for example,user and user portfolio,Country and Prime Minister
+
+
+3.Many-Many Relation
+
+if you ha ve to link multiple items ofa table with multiple object of another table then you can use
+many-many relationship
+for example user and user role
+
+
+

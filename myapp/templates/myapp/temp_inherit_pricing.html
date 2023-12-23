@@ -2,4 +2,29 @@
 
 {% block content %}
  <h1> ALL PRICING ARE HERE</h1>
+
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Email</th>
+      
+      
+    </tr>
+  </thead>
+  <tbody>
+  {% for student in students %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{ student.name }}</td>
+      <td>{{ student.address }}</td>
+      <td>{{ student.email }}</td>
+      
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 {% endblock %}
